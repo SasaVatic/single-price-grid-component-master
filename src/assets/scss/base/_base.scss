@@ -1,0 +1,17 @@
+@use "../abstract/" as a;
+
+body {
+  background-color: var(--light-gray);
+  overflow-x: hidden;
+  padding-bottom: 10px;
+}
+
+section {
+  @include a.media-breakpoint-between(xs, sm) {
+    padding: 72px 0;
+  }
+
+  @include a.media-breakpoint-up(sm) {
+    padding: 162px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.btn-subscribe {
+  display: block;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  border-radius: 5px;
+  padding: 16px 20px;
+  box-shadow: 0 5px 10px rgba($color: #000, $alpha: 0.3);
+  transition: all 0.3s ease;
+  max-width: 235.5px;
+
+  &:hover {
+    filter: brightness(95%);
+    box-shadow: none;
+    transform: scale(1.05);
+  }
+}

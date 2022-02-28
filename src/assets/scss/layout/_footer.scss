@@ -1,0 +1,49 @@
+.footer {
+  position: relative;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background-color: var(--bright-yellow);
+    box-shadow: 0 0 1px 1px var(--bright-yellow), 0 0 2px 2px var(--cyan), 0 0 0 3px var(--fountain-blue);
+  }
+
+  &::before {
+    top: -6px;
+    left: -23px;
+    transition: all 1s ease;
+  }
+
+  &::after {
+    bottom: -6px;
+    right: -23px;
+    transition: all 1s ease;
+  }
+
+  &:hover::before {
+    left: 105%;
+  }
+
+  &:hover::after {
+    right: 105%;
+  }
+
+  &__attribution {
+    color: var(--light-gray);
+    background-color: var(--cyan);
+    padding: 5px 20px;
+
+    & > a {
+      color: inherit;
+      transition: color 0.3s ease 0.2s;
+    }
+
+    &:hover > a {
+      color: var(--bright-yellow);
+    }
+  }
+}
